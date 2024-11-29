@@ -1,0 +1,243 @@
+/* importar a fonte */
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+:root {
+    --primaria: #ffc0cb;
+    --fundo: #fff;
+    --sombra: #00000042;
+    --text: #000;
+
+}
+
+
+.app {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    overflow: auto;
+
+    display: flex;
+    flex-direction: column;
+    scroll-behavior: smooth;
+    
+}
+
+
+header {
+    padding: 10px;
+    min-height: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 30px;
+
+}
+
+header .links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+header .links a {
+    width: 30px;
+    text-decoration: none;
+    color: var(--primaria);
+
+    border: 1px solid var(--primaria);
+
+    width: 30px;
+    height: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+header .links a i {
+    font-size: 20px;
+}
+
+section {
+   
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+    min-height: 110%;
+    position: relative;
+    
+}
+
+
+.infos {
+    flex: 1;
+    max-width: 600px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.infos h2 {
+    font-size: 1.25rem;
+}
+
+.infos p {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: .77rem;
+}
+
+.infos ul {
+    padding-left: 25px;
+    font-size: .77rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.img {
+    flex: 1;
+    max-width: 300px;
+}
+.img img {
+    max-width: 100%;
+}
+
+
+
+.link_button {
+    padding: 10px;
+    background-color: var(--primaria);
+    max-width: 210px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    height: 60px;
+
+
+    text-decoration: none;
+    color: var(--text);
+    font-weight: 500;
+    font-size: 0.87rem;
+}
+
+.form {
+    flex: 1;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    gap: 30px;
+}
+
+.form_cadastro_emails {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    box-shadow: 0 0 15px 2px var(--sombra);
+    border-radius: 10px;
+
+    padding: 20px;
+    max-width: 400px;
+    min-width: 400px;
+
+    
+}
+
+.form_cadastro_emails .entry {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.form_cadastro_emails .entry span {
+    font-weight: 400;
+}
+
+.form_cadastro_emails .entry input {
+    padding: 10px;
+    outline: none;
+    border: 0;
+    background-color: #0000000c;
+    border: 2px solid transparent;
+    border-radius: 5px;
+}
+.form_cadastro_emails .entry input:focus {
+    border-color: var(--primaria);
+}
+
+.form_cadastro_emails button {
+    background-color: var(--primaria);
+    padding: 10px;
+    border: 0;
+    cursor: pointer;
+    border-radius: 10px;
+
+    margin-top: 20px;
+}
+
+
+@media(max-width:700px){
+    section {
+   
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    
+        min-height: 100%;
+
+        padding: 20px;
+    }
+
+    .infos {
+        flex: 1;
+        max-width: 600px;
+    
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img {
+        flex: 1;
+        max-width: 100%;
+
+    }
+    .img img {
+        max-width: 100%;
+    }
+    
+    
+}
+
+
